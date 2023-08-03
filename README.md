@@ -30,10 +30,9 @@ This is the official implementaion of paper [***Generative Prompt Model for Weak
     - [4.3 Training](#43-training)
     - [4.4 Inference](#44-inference)
     - [4.5 Extra Options](#45-extra-options)
-  - [5. License](#5-license)
-  - [6. Contacts](#6-contacts)
-  - [7. Acknowledgment](#7-acknowledgment)
-  - [8. Citation](#8-citation)
+  - [5. Contacts](#5-contacts)
+  - [6. Acknowledgment](#6-acknowledgment)
+  - [7. Citation](#7-citation)
 
 ## 2. Introduction
 
@@ -172,23 +171,19 @@ python main.py --function test --config configs/imagenet_stage2.yml --opt "{'dat
 <img src="assets/visualize.png" width="99%">
 </div>
     
-## 5. License
-
-- The repository is released under the MIT license.
-
-## 6. Contacts
+## 5. Contacts
 If you have any question about our work or this repository, please don't hesitate to contact us by emails.
 - [zhaoyuzhong20@mails.ucas.ac.cn](zhaoyuzhong20@mails.ucas.ac.cn)
 - [wanfang@ucas.ac.cn](wanfang@ucas.ac.cn)
 
 You can also open an issue under this project.
 
-## 7. Acknowledgment
+## 6. Acknowledgment
 
 - Part of the code is borrowed from [TS-CAM](https://github.com/vasgaowei/TS-CAM), [diffusers](https://github.com/huggingface/diffusers), and [prompt-to-prompt](https://github.com/google/prompt-to-prompt/), we sincerely thank them for their contributions to the community.
 
 
-## 8. Citation
+## 7. Citation
 
 ```text
 @article{zhao2023generative,

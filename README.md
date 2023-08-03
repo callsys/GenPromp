@@ -32,7 +32,7 @@
 
 ## 4. License
 
-- The repository is released under the [MIT license](LICENSE).
+- The repository is released under the MIT license.
 
 ## 5. Acknowledgment
 

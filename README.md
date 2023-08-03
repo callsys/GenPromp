@@ -124,22 +124,22 @@ There are many extra options during training and inference. The default option i
   | -------| ----- | ----- |
   | {'data': {'keep_class': [0, 9]}}                            | train & test      | keep the data with category id in `[0, 1, 2, 3, ..., 9]`            |
   | {'train': {'batch_size': 2}}                                | train             | train with batch size `2`.                                          |
-  | {'train': {'save_steps': 200}}                              | train_unet        | save trained unet every `200` steps.                                |
   | {'train': {'num_train_epochs': 1}}                          | train             | train the model for `1` epoch.                                      |
+  | {'train': {'save_steps': 200}}                              | train_unet        | save trained unet every `200` steps.                                |
   | {'train': {'max_train_steps': 600}}                         | train_unet        | terminate training within `600` steps.                              |
   | {'train': {'gradient_accumulation_steps': 2}}               | train             | batch size `x2` when the memory of GPU is not large enough.         |
   | {'train': {'learning_rate': 5.0e-08}}                       | train             | the learning rate is `5.0e-8`.                                      |
   | {'train': {'scale_lr': True}}                               | train             | the learning rate is multiplied with batch size if `True`.          |
   | {'train': {'load_pretrain_path': 'stable-diffusion'}}       | train             | the pretrained model is load from `stable-diffusion`.               |
   | {'train': {'load_token_path': 'ckpt/tokens'}}               | train             | the trained concept tokens are load from `ckpt/tokens`.             |
-  | {'train': {'save_path': 'ckpt/tokens'}}                     | train             | save the trained weights to `ckpt/tokens`.                          |
+  | {'train': {'save_path': 'ckpt/'}}                           | train             | save the trained weights to `ckpt/`.                                |
   | {'test': {'batch_size': 2}}                                 | test              | test with batch size `2`.                                           |
   | {'test': {'cam_thr': 0.25}}                                 | test              | test with cam threshold `0.25`.                                     |
   | {'test': {'combine_ratio': 0.6}}                            | test              | combine ratio between $f_r$ and $f_d$ is `0.6`.                     |
   | {'test': {'load_class_path': 'imagenet_efficientnet.json'}} | test              | load classification results from `imagenet_efficientnet.json`.      |
   | {'test': {'load_pretrain_path': 'stable-diffusion'}}        | test              | the pretrained model is load from `stable-diffusion`.               |
   | {'test': {'load_token_path': 'ckpt/tokens'}}                | test              | the trained concept tokens are load from `ckpt/tokens`.             |
-  | {'test': {'load_unet_path': 'ckpt/unet'}}                   | test              | the trained unet are load from `ckpt/unet`.                         |
+  | {'test': {'load_unet_path': 'ckpt/unet'}}                   | test              | the trained unet is load from `ckpt/unet`.                          |
   | {'test': {'save_vis_path': 'ckpt/vis'}}                     | test              | the visualized predictions are saved to `ckpt/vis`.                 |
   | {'test': {'save_log_path': 'ckpt/log.txt'}}                 | test              | the log file is saved to `ckpt/log.txt`.                            |
   | {'test': {'eval_mode': 'top1'}}                             | test              | test mode, `top1` denotes evaluating the predicted top1 cls category of the test image, `top5` denotes evaluating the predicted top5 cls category of the test image, `gtk` denotes evaluating the gt category of the test image, which can be tested without the classification result. We use `top1` as the default eval mode.  |   

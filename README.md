@@ -36,7 +36,7 @@
 
 ## 5. Acknowledgment
 
-- Part of the code is borrowed from [diffusers](https://github.com/huggingface/diffusers),[TS-CAM](https://github.com/vasgaowei/TS-CAM), and [prompt-to-prompt](https://github.com/google/prompt-to-prompt/), we sincerely thank them for their contributions to the community.
+- Part of the code is borrowed from [TS-CAM](https://github.com/vasgaowei/TS-CAM), [diffusers](https://github.com/huggingface/diffusers), and [prompt-to-prompt](https://github.com/google/prompt-to-prompt/), we sincerely thank them for their contributions to the community.
 
 ## 6. Citation
 
@@ -47,5 +47,4 @@
   journal={arXiv preprint arXiv:2307.09756},
   year={2023}
 }
-
 ```

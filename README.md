@@ -20,18 +20,18 @@
 
 ## Contents
 - [Generative Prompt Model for Weakly Supervised Object Localization]
-  - [1. Contents](##1.-contents)
-  - [2. Introduction](##-2.-introduction)
-  - [3. Results](#3-union14m-dataset)
-  - [4. Get Start]()
-    - [4.1 Installation](#31-union14m-l)
-    - [4.2 Dataset & Files Preparation](#32-union14m-u)
-    - [4.3 Training](#33-union14m-benchmark)
-    - [4.4 Inference](#34-download)
-    - [4.5 Extra Options](#34-download)
-  - [5. License](#5-maerec)
-  - [6. Contacts](#6-license)
-  - [7. Acknowledgment](#7-acknowledgement)
+  - [1. Contents](#1-contents)
+  - [2. Introduction](#2-introduction)
+  - [3. Results](#3-results)
+  - [4. Get Start](#4-get-start)
+    - [4.1 Installation](#41-installation)
+    - [4.2 Dataset & Files Preparation](#42-dataset-&-files-preparation)
+    - [4.3 Training](#43-training)
+    - [4.4 Inference](#44-inference)
+    - [4.5 Extra Options](#45-extra-options)
+  - [5. License](#5-license)
+  - [6. Contacts](#6-contacts)
+  - [7. Acknowledgment](#7-acknowledgment)
   - [8. Citation](#8-citation)
 
 ## 2. Introduction

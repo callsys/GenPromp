@@ -122,12 +122,13 @@ There are many extra options during training and inference. The default option i
 
   | Option | Scope | Usage |
   | -------| ----- | ----- |
-  | {'data': {'keep_class': [0, 9]}}  | train & inference | keep the data with category id in [0, 1, 2, 3, ..., 9]          |
-  | data/CUB_200_2011 (1.2GB)                   | [Official Link](http://www.vision.caltech.edu/datasets/cub_200_2011/)      | Benchmark dataset                                        |
-  | ckpts/pretrains (5.2GB)                | [Official Link](), [Google Drive](), [Baidu Drive]()          | Stable Diffusion pretrain weights                                     |
-  | ckpts/classifications (1.2GB)          | [Google Drive](), [Baidu Drive]()                                      | Classfication results on benchmark datasets                           |
-  | ckpts/imagenet750 (3.3.GB)             | [Google Drive](), [Baidu Drive]()                                      | Weights that achieves 75.0% GT-Known Loc on ImageNet                  |
-  | ckpts/cub980 (832KB)                   | [Google Drive](), [Baidu Drive]()                                      | Weights that achieves 98.0% GT-Known Loc on CUB                       |
+  | {'data': {'keep_class': [0, 9]}}      | train & test      | keep the data with category id in `[0, 1, 2, 3, ..., 9]`        |
+  | {'train': {'batch_size': 2}}          | train             | train with batch size `2`.                                      |
+  | {'train': {'save_steps': 200}}        | train_unet        | save trained unet every `200` steps.                            |
+  | {'train': {'num_train_epochs': 1}}    | train             | train the model for `1` epoch.                                  |
+  | {'train': {'max_train_steps': 600}}   | train_unet        | terminate training within `600` steps.                          |
+
+  
 
 ## 4. License
 

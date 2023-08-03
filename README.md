@@ -20,7 +20,7 @@ This is the official implementaion of paper [***Generative Prompt Model for Weak
 </div>
 
 ## 1. Contents
-- [Generative Prompt Model for Weakly Supervised Object Localization]
+- Generative Prompt Model for Weakly Supervised Object Localization
   - [1. Contents](#1-contents)
   - [2. Introduction](#2-introduction)
   - [3. Results](#3-results)

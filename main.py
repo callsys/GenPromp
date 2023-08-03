@@ -567,7 +567,7 @@ def train_unet(config):
 
         if accelerator.is_main_process:
             print(f"INFO: Train Save:\t [ckpt: {save_path}]", flush=True)
-            print(f"INFO: Finetune UNet:\t [num samples: {len(dataloader)}] "
+            print(f"INFO: Train UNet:\t [num samples: {len(dataloader)}] "
                   f"[num epochs: {num_train_epochs}] [batch size: {total_batch_size}] "
                   f"[total steps: {max_train_steps}] [save step: {save_step}]", flush=True)
 
@@ -630,16 +630,6 @@ def train_unet(config):
 
                 if global_step >= max_train_steps:
                     break
-
-            if accelerator.sync_gradients:
-                accelerator.wait_for_everyone()
-                if accelerator.is_main_process:
-                    out_dir = os.path.join(save_path, f"unet_e{global_step}")
-                    os.makedirs(out_dir, exist_ok=True)
-                    try:
-                        unet.module.save_pretrained(save_directory=out_dir)
-                    except:
-                        unet.save_pretrained(save_directory=out_dir)
 
         accelerator.end_training()
 

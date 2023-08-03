@@ -34,6 +34,34 @@ pip install matplotlib opencv-python OmegaConf tqdm
 
 ### 3.2 Dataset & Files Preparation
 
+```text
+    |--GenPromp/
+      |--data/
+        |--ImageNet_ILSVRC2012/
+           |--ILSVRC2012_list/
+           |--train/
+           |--val/
+        |--CUB_200_2011
+           |--attributes/
+           |--images/
+           ...
+      |--ckpts/
+        |--pretrains/
+          |--stable-diffusion-v1-4/
+        |--classifications/
+          |--cub_efficientnetb7.json
+          |--imagenet_efficientnet-b7_3rdparty_8xb32-aa-advprop_in1k.json
+        |--ckpt_imagenet/
+          |--tokens/
+          |--unet/
+        |--ckpt_cub/
+          |--tokens/
+      |--configs/
+      |--datasets
+      |--models
+      |--main.py
+    ```
+
 ### 3.3 Training
 
 ### 3.4 Inference

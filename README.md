@@ -165,6 +165,11 @@ These options can be combined by simplely merging the dicts. For example, if you
 ```
 python main.py --function test --config configs/imagenet_stage2.yml --opt "{'data': {'keep_class': [0, 9]}, 'test': {'load_token_path': 'ckpts/imagenet750/tokens/', 'load_unet_path': 'ckpts/imagenet750/unet/', 'save_log_path':'ckpts/imagnet750/log.txt', 'combine_ratio': 0, 'save_vis_path': 'ckpts/imagenet750/vis'}}"
 ```
+
+<div align=center>
+  
+<img src="assets/visualize.png" width="99%">
+</div>
     
 ## 5. License
 

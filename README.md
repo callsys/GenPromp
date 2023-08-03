@@ -20,19 +20,19 @@
 
 ## 3. Get Start
 
-## 3.1 Installation
+### 3.1 Installation
 
-## 3.2 Dataset Preparation
+### 3.2 Dataset Preparation
 
-## 3.3 Training
+### 3.3 Training
 
-## 3.4 Inference
+### 3.4 Inference
 
-## 3.5 Extra Options
+### 3.5 Extra Options
 
-# 4. License
+## 4. License
 
-# 5. Acknowledgment
+## 5. Acknowledgment
 
-# 6. Citation
+## 6. Citation
 

@@ -1,6 +1,3 @@
-
-from typing import Any
-import numpy as np
 from .cam import evaluate_cls_loc, list2acc
 
 # Evaluation code from TS-CAM

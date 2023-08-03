@@ -90,10 +90,10 @@ To train GenPromp with pre-training weights and infer GenPromp with the given we
         |--classifications/
           |--cub_efficientnetb7.json
           |--imagenet_efficientnet-b7_3rdparty_8xb32-aa-advprop_in1k.json
-        |--ckpt_imagenet/
+        |--imagenet750/
           |--tokens/
           |--unet/
-        |--ckpt_cub/
+        |--cub980/
           |--tokens/
       |--configs/
       |--datasets

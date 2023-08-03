@@ -39,9 +39,9 @@ pip install matplotlib opencv-python OmegaConf tqdm
   | ImageNet_ILSVRC2012 (146GB)            | [Official Download Link](http://image-net.org/)                        | Benchmark dataset                                                     |
   | CUB_200_2011 (1.2GB)                   | [Official Download Link](http://www.vision.caltech.edu/datasets/cub_200_2011/)      | Benchmark dataset                                        |
   | ckpts/pretrains (5.2GB)                | [Official Download Link](), [Google Drive](), [Baidu Drive]()          | Stable Diffusion pretrain weights                                     |
-  | ckpts/classifications (1.2GB)          | [One Drive](https://1drv.ms/u/s!AotJrudtBr-K7w8FSOI48iBI-du5?e=t8jSqN) | [Baidu Yun](https://pan.baidu.com/s/1XifQS0v-0YxEXkGTfWMDWQ?pwd=35cz) |
-  | ckpts/ckpt_imagenet (3.3.GB)           | [One Drive](https://1drv.ms/u/s!AotJrudtBr-K7w8FSOI48iBI-du5?e=t8jSqN) | [Baidu Yun](https://pan.baidu.com/s/1XifQS0v-0YxEXkGTfWMDWQ?pwd=35cz) |
-  | ckpts/ckpt_cub (832KB)                 | [One Drive](https://1drv.ms/u/s!AotJrudtBr-K7w8FSOI48iBI-du5?e=t8jSqN) | [Baidu Yun](https://pan.baidu.com/s/1XifQS0v-0YxEXkGTfWMDWQ?pwd=35cz) |
+  | ckpts/classifications (1.2GB)          | [Google Drive](), [Baidu Drive]()                                      | Classfication results on benchmark datasets                           |
+  | ckpts/ckpt_imagenet (3.3.GB)           | [One Drive](https://1drv.ms/u/s!AotJrudtBr-K7w8FSOI48iBI-du5?e=t8jSqN) | GenPromp weights on ImageNet                                          |
+  | ckpts/ckpt_cub (832KB)                 | [One Drive](https://1drv.ms/u/s!AotJrudtBr-K7w8FSOI48iBI-du5?e=t8jSqN) | GenPromp weights on CUB                                               |
 
 ```text
     |--GenPromp/

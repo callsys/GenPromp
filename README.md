@@ -109,7 +109,7 @@ Here is a inference example of GenPromp on ImageNet.
 ```
 python main.py --function test --config configs/imagenet_stage2.yml --opt "{'test': {'load_token_path': 'ckpts/imagenet750/tokens/', 'load_unet_path': 'ckpts/imagenet750/unet/', 'save_log_path': 'ckpts/imagnet750/log.txt'}}"
 ```
-In the inference stage, the weights of the learned concept tokens are load from `ckpts/imagenet750/tokens/` ,the weights of the finetuned unet are load from `ckpts/imagenet750/unet/` and the log file is saved to `ckpts/imagnet750/log.txt`. Due the random noise added to the tested image and the batch size, the results might fluctuate within a small range ($\pm$ 0.1).
+In the inference stage, the weights of the learned concept tokens are load from `ckpts/imagenet750/tokens/` , the weights of the finetuned UNet are load from `ckpts/imagenet750/unet/` and the log file is saved to `ckpts/imagnet750/log.txt`. Due the random noise added to the tested image and the batch size, the results might fluctuate within a small range ($\pm$ 0.1).
 
 Here is a inference example of GenPromp on CUB_200_2011.
 ```
@@ -125,7 +125,7 @@ There are many extra options during training and inference. The default option i
   | {'data': {'keep_class': [0, 9]}}                            | data              | keep the data with category id in `[0, 1, 2, 3, ..., 9]`            |
   | {'train': {'batch_size': 2}}                                | train             | train with batch size `2`.                                          |
   | {'train': {'num_train_epochs': 1}}                          | train             | train the model for `1` epoch.                                      |
-  | {'train': {'save_steps': 200}}                              | train_unet        | save trained unet every `200` steps.                                |
+  | {'train': {'save_steps': 200}}                              | train_unet        | save trained UNet every `200` steps.                                |
   | {'train': {'max_train_steps': 600}}                         | train_unet        | terminate training within `600` steps.                              |
   | {'train': {'gradient_accumulation_steps': 2}}               | train             | batch size `x2` when the memory of GPU is limited.                  |
   | {'train': {'learning_rate': 5.0e-08}}                       | train             | the learning rate is `5.0e-8`.                                      |
@@ -139,12 +139,12 @@ There are many extra options during training and inference. The default option i
   | {'test': {'load_class_path': 'imagenet_efficientnet.json'}} | test              | load classification results from `imagenet_efficientnet.json`.      |
   | {'test': {'load_pretrain_path': 'stable-diffusion/'}}       | test              | the pretrained model is load from `stable-diffusion/`.              |
   | {'test': {'load_token_path': 'ckpt/tokens/'}}               | test              | the trained concept tokens are load from `ckpt/tokens/`.            |
-  | {'test': {'load_unet_path': 'ckpt/unet/'}}                  | test              | the trained unet is load from `ckpt/unet/`.                         |
+  | {'test': {'load_unet_path': 'ckpt/unet/'}}                  | test              | the trained UNet is load from `ckpt/unet/`.                         |
   | {'test': {'save_vis_path': 'ckpt/vis/'}}                    | test              | the visualized predictions are saved to `ckpt/vis/`.                |
   | {'test': {'save_log_path': 'ckpt/log.txt'}}                 | test              | the log file is saved to `ckpt/log.txt`.                            |
   | {'test': {'eval_mode': 'top1'}}                             | test              | `top1` denotes evaluating the predicted top1 cls category of the test image, `top5` denotes evaluating the predicted top5 cls category of the test image, `gtk` denotes evaluating the gt category of the test image, which can be tested without the classification result. We use `top1` as the default eval mode.  |   
 
-These options can be combined by simplely merging the dicts. For example, if you want to evaluate GenPromp with config file `configs/imagenet_stage2.yml`, with categories `[0, 1, 2, ..., 9]`, concept tokens load from `ckpts/imagenet750/tokens/`, unet load from `ckpts/imagenet750/unet/`, log file saved to `ckpts/imagnet750/log0-9.txt`, combine ratio equals to `0`, visualization results saved to `ckpts/imagenet750/vis`, using the following command:
+These options can be combined by simplely merging the dicts. For example, if you want to evaluate GenPromp with config file `configs/imagenet_stage2.yml`, with categories `[0, 1, 2, ..., 9]`, concept tokens load from `ckpts/imagenet750/tokens/`, UNet load from `ckpts/imagenet750/unet/`, log file saved to `ckpts/imagnet750/log0-9.txt`, combine ratio equals to `0`, visualization results saved to `ckpts/imagenet750/vis`, using the following command:
 
 ```
 python main.py --function test --config configs/imagenet_stage2.yml --opt "{'data': {'keep_class': [0, 9]}, 'test': {'load_token_path': 'ckpts/imagenet750/tokens/', 'load_unet_path': 'ckpts/imagenet750/unet/', 'save_log_path':'ckpts/imagnet750/log.txt', 'combine_ratio': 0, 'save_vis_path': 'ckpts/imagenet750/vis'}}"

@@ -45,6 +45,8 @@ pip install matplotlib opencv-python OmegaConf tqdm
  ```
 
 ### 3.2 Dataset & Files Preparation
+To train GenPromp with pre-trained weights and inference GenPromp with given weights, please download the files in the table and arrange the files like the file tree below.
+
 
   | Dataset & Files                        | Download                                                               | Usage                                                                 |
   | -------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |

@@ -22,6 +22,16 @@
 
 ### 3.1 Installation
 
+To setup the environment of GenPromp, we use `conda` to manage our dependencies. Our developers use `CUDA 11.3` to do experiments. Run the following commands to install GenPromp:
+ ```
+conda create -n gpm python=3.8 -y && conda activate gpm
+pip install --upgrade pip
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+pip install --upgrade diffusers[torch]==0.13.1
+pip install transformers==4.29.2 accelerate==0.19.0
+pip install matplotlib opencv-python OmegaConf tqdm
+ ```
+
 ### 3.2 Dataset Preparation
 
 ### 3.3 Training

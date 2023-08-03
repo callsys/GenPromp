@@ -6,6 +6,7 @@
 
 <div align=center>
   <p >GenPromp is a Weakly Supervised Object Localization (WSOL) method, which significantly outperforms its discriminative counterparts on commonly used benchmarks, setting a solid baseline for WSOL with generative models.</p>
+</div>
 
 <div align=center>
 

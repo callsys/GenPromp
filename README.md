@@ -88,7 +88,7 @@ To train GenPromp with pre-training weights and infer GenPromp with the given we
 
 ### 3.3 Training
 
-We use `accelerate` for multi-GPU training. Here is a training example of GenPromp on ImageNet. In the first training stage, the weights of concept tokens of the representative embeddings are learned and saved to `ckpts/imagenet/`. In the second training stage, the weights of the learned concept tokens are loaded from `ckpts/imagenet/tokens`, then the weights of the UNet are finetuned and saved to `ckpts/imagenet/`. Other configurations can be seen in the config files (i.e. `configs/imagenet.yml` and `configs/imagenet_stage2.yml`) and can be modified by `--opt` with a parameter dict.
+`accelerate` is used for multi-GPU training. Here is a training example of GenPromp on ImageNet. In the first training stage, the weights of concept tokens of the representative embeddings are learned and saved to `ckpts/imagenet/`. In the second training stage, the weights of the learned concept tokens are loaded from `ckpts/imagenet/tokens`, then the weights of the UNet are finetuned and saved to `ckpts/imagenet/`. Other configurations can be seen in the config files (i.e. `configs/imagenet.yml` and `configs/imagenet_stage2.yml`) and can be modified by `--opt` with a parameter dict.
 
 ```
 accelerate config
@@ -96,8 +96,11 @@ accelerate launch python main.py --function train_token --config configs/imagene
 accelerate launch python main.py --function train_unet --config configs/imagenet_stage2.yml --opt "{'train':{'load_token_path':'ckpts/imagenet/tokens/','save_path':'ckpts/imagenet/'}}"
 ```
 
+Here is a training example of GenPromp on CUB_200_2011.
 ```
-accelerate launch python main.py --function train_unet --config configs/imagenet_stage2.yml --opt "{'train':{'load_token_path':'ckpts/imagenet/tokens/','save_path':'ckpts/imagenet/'}}"
+accelerate config
+accelerate launch python main.py --function train_token --config configs/cub.yml --opt "{'train':{'save_path':'ckpts/cub/'}}"
+accelerate launch python main.py --function train_unet --config configs/cub_stage2.yml --opt "{'train':{'load_token_path':'ckpts/cub/tokens/','save_path':'ckpts/cub/'}}"
 ```
 
 ### 3.4 Inference

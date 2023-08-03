@@ -5,7 +5,7 @@
 </div>
 
 <div align=center>
-  <p >GenPromp is a Weakly Supervised Object Localization (WSOL) method, which significantly outperforms its discriminative counterparts on commonly used benchmarks, setting a solid baseline for WSOL with generative models</p>
+  <p >GenPromp is a Weakly Supervised Object Localization (WSOL) method, which significantly outperforms its discriminative counterparts on commonly used benchmarks, setting a solid baseline for WSOL with generative models.</p>
 
 <div align=center>
 
@@ -13,5 +13,9 @@
 
 </div>
 
-[arxiv](https://arxiv.org/abs/2307.09756)
+## 1. Introduction
+
+## 2. Results
+
+## 3. Get Start
 

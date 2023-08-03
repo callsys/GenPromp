@@ -18,23 +18,37 @@
 <img src="assets/intro.png" width="69%">
 </div>
 
-@[toc]
+## Contents
+- [Generative Prompt Model for Weakly Supervised Object Localization]
+  - [1. Contents](##-1.-Contents)
+  - [2. Introduction](##-2.-Introduction)
+  - [3. Results](#3-union14m-dataset)
+  - [4. Get Start]()
+    - [4.1 Installation](#31-union14m-l)
+    - [4.2 Dataset & Files Preparation](#32-union14m-u)
+    - [4.3 Training](#33-union14m-benchmark)
+    - [4.4 Inference](#34-download)
+    - [4.5 Extra Options](#34-download)
+  - [5. License](#5-maerec)
+  - [6. Contacts](#6-license)
+  - [7. Acknowledgment](#7-acknowledgement)
+  - [8. Citation](##-8.-Citation)
 
-## 1. Introduction
+## 2. Introduction
 
 Weakly supervised object localization (WSOL) remains challenging when learning object localization models from image category labels. Conventional methods that discriminatively train activation models ignore representative yet less discriminative object parts. In this study, we propose a generative prompt model (GenPromp), defining the first generative pipeline to localize less discriminative object parts by formulating WSOL as a conditional image denoising procedure. During training, GenPromp converts image category labels to learnable prompt embeddings which are fed to a generative model to conditionally recover the input image with noise and learn representative embeddings. During inference, GenPromp combines the representative embeddings with discriminative embeddings (queried from an off-the-shelf vision-language model) for both representative and discriminative capacity. The combined embeddings are finally used to generate multi-scale high-quality attention maps, which facilitate localizing full object extent. Experiments on CUB-200-2011 and ILSVRC show that GenPromp respectively outperforms the best discriminative models, setting a solid baseline for WSOL with the generative model.
 
 
-## 2. Results
+## 3. Results
 
 <div align=center>
   
 <img src="assets/results.png" width="99%">
 </div>
 
-## 3. Get Start
+## 4. Get Start
 
-### 3.1 Installation
+### 4.1 Installation
 
 To setup the environment of GenPromp, we use `conda` to manage our dependencies. Our developers use `CUDA 11.3` to do experiments. Run the following commands to install GenPromp:
  ```
@@ -46,7 +60,7 @@ pip install transformers==4.29.2 accelerate==0.19.0
 pip install matplotlib opencv-python OmegaConf tqdm
  ```
 
-### 3.2 Dataset & Files Preparation
+### 4.2 Dataset & Files Preparation
 To train GenPromp with pre-training weights and infer GenPromp with the given weights, download the files in the table and arrange the files according to the file tree below. (Uploading)
 
 
@@ -88,7 +102,7 @@ To train GenPromp with pre-training weights and infer GenPromp with the given we
 ```
 
 
-### 3.3 Training
+### 4.3 Training
 
 Here is a training example of GenPromp on ImageNet.
 ```
@@ -105,7 +119,7 @@ accelerate launch python main.py --function train_token --config configs/cub.yml
 accelerate launch python main.py --function train_unet --config configs/cub_stage2.yml --opt "{'train': {'load_token_path': 'ckpts/cub/tokens/', 'save_path': 'ckpts/cub/'}}"
 ```
 
-### 3.4 Inference
+### 4.4 Inference
 Here is a inference example of GenPromp on ImageNet.
 
 ```
@@ -118,7 +132,7 @@ Here is a inference example of GenPromp on CUB_200_2011.
 python main.py --function test --config configs/cub.yml --opt "{'test': {'load_token_path': 'ckpts/cub980/tokens/', 'save_log_path': 'ckpts/cub980/log.txt'}}"
 ```
 
-### 3.5 Extra Options
+### 4.5 Extra Options
 
 There are many extra options during training and inference. The default option is configured in the `yml` file. We can use `--opt` to add or override the default option with a parameter dict. Here are some usage of the most commonly used options.
 
@@ -152,23 +166,23 @@ These options can be combined by simplely merging the dicts. For example, if you
 python main.py --function test --config configs/imagenet_stage2.yml --opt "{'data': {'keep_class': [0, 9]}, 'test': {'load_token_path': 'ckpts/imagenet750/tokens/', 'load_unet_path': 'ckpts/imagenet750/unet/', 'save_log_path':'ckpts/imagnet750/log.txt', 'combine_ratio': 0, 'save_vis_path': 'ckpts/imagenet750/vis'}}"
 ```
     
-## 4. License
+## 5. License
 
 - The repository is released under the MIT license.
 
-## 5. Contacts
+## 6. Contacts
 If you have any question about our work or this repository, please don't hesitate to contact us by emails.
 - [zhaoyuzhong20@mails.ucas.ac.cn](zhaoyuzhong20@mails.ucas.ac.cn)
 - [wanfang@ucas.ac.cn](wanfang@ucas.ac.cn)
 
 You can also open an issue under this project.
 
-## 6. Acknowledgment
+## 7. Acknowledgment
 
 - Part of the code is borrowed from [TS-CAM](https://github.com/vasgaowei/TS-CAM), [diffusers](https://github.com/huggingface/diffusers), and [prompt-to-prompt](https://github.com/google/prompt-to-prompt/), we sincerely thank them for their contributions to the community.
 
 
-## 7. Citation
+## 8. Citation
 
 ```text
 @article{zhao2023generative,

@@ -37,7 +37,7 @@ pip install matplotlib opencv-python OmegaConf tqdm
   | Files                                  | Download                                                               | Usage                                                                 |
   | -------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
   | ImageNet_ILSVRC2012 (146GB)            | [Official Download Link](http://image-net.org/)                        | Benchmark dataset                                                     |
-  | CUB_200_2011 (1.2GB)                   | [Official Download Link](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)                        | Benchmark dataset                                                     |
+  | CUB_200_2011 (1.2GB)                   | [Official Download Link](http://www.vision.caltech.edu/datasets/)      | Benchmark dataset                                                     |
   | ckpts/pretrains (5.2GB)                | [One Drive](https://1drv.ms/u/s!AotJrudtBr-K7w8FSOI48iBI-du5?e=t8jSqN)     | Stable Diffusion pretrain weights                                     |
   | ckpts/classifications (1.2GB)          | [One Drive](https://1drv.ms/u/s!AotJrudtBr-K7w8FSOI48iBI-du5?e=t8jSqN) | [Baidu Yun](https://pan.baidu.com/s/1XifQS0v-0YxEXkGTfWMDWQ?pwd=35cz) |
   | ckpts/ckpt_imagenet (3.3.GB)           | [One Drive](https://1drv.ms/u/s!AotJrudtBr-K7w8FSOI48iBI-du5?e=t8jSqN) | [Baidu Yun](https://pan.baidu.com/s/1XifQS0v-0YxEXkGTfWMDWQ?pwd=35cz) |

@@ -14,7 +14,7 @@
 
 </div>
 
-<img src="assets/intro.png" width="99%">
+<img src="assets/intro.png" width="69%">
 
 ## 1. Introduction
 

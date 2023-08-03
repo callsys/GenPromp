@@ -111,11 +111,19 @@ python main.py --function test --config configs/cub.yml --opt "{'test':{'load_to
 
 - The repository is released under the MIT license.
 
-## 5. Acknowledgment
+## 5. Contacts
+If you have any question about our work or this repository, please don't hesitate to contact us by emails.
+- [zhaoyuzhong20@mails.ucas.ac.cn](zhaoyuzhong20@mails.ucas.ac.cn)
+- [wanfang@ucas.ac.cn](wanfang@ucas.ac.cn)
+
+You can also open an issue under this project.
+
+## 6. Acknowledgment
 
 - Part of the code is borrowed from [TS-CAM](https://github.com/vasgaowei/TS-CAM), [diffusers](https://github.com/huggingface/diffusers), and [prompt-to-prompt](https://github.com/google/prompt-to-prompt/), we sincerely thank them for their contributions to the community.
 
-## 6. Citation
+
+## 7. Citation
 
 ```text
 @article{zhao2023generative,

@@ -18,7 +18,7 @@
 <img src="assets/intro.png" width="69%">
 </div>
 
-## Contents
+## 1. Contents
 - [Generative Prompt Model for Weakly Supervised Object Localization]
   - [1. Contents](#1-contents)
   - [2. Introduction](#2-introduction)

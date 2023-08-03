@@ -11,6 +11,9 @@
 <div align=center>
   
 [![arXiv preprint](http://img.shields.io/badge/arXiv-2307.09756-b31b1b)](https://arxiv.org/abs/2307.09756)
+![Python 3.8](https://img.shields.io/badge/Python-3.8-green.svg?style=plastic)
+![PyTorch 1.7](https://img.shields.io/badge/PyTorch-1.6-EE4C2C.svg?style=plastic)
+[![LICENSE](https://img.shields.io/github/license/vasgaowei/ts-cam.svg)](LICENSE)
 </div>
 
 <div align=center>

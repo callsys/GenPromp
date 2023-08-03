@@ -91,29 +91,29 @@ To train GenPromp with pre-training weights and infer GenPromp with the given we
 Here is a training example of GenPromp on ImageNet.
 ```
 accelerate config
-accelerate launch python main.py --function train_token --config configs/imagenet.yml --opt "{'train':{'save_path':'ckpts/imagenet/'}}"
-accelerate launch python main.py --function train_unet --config configs/imagenet_stage2.yml --opt "{'train':{'load_token_path':'ckpts/imagenet/tokens/','save_path':'ckpts/imagenet/'}}"
+accelerate launch python main.py --function train_token --config configs/imagenet.yml --opt "{'train': {'save_path': 'ckpts/imagenet/'}}"
+accelerate launch python main.py --function train_unet --config configs/imagenet_stage2.yml --opt "{'train': {'load_token_path': 'ckpts/imagenet/tokens/', 'save_path': 'ckpts/imagenet/'}}"
 ```
 `accelerate` is used for multi-GPU training. In the first training stage, the weights of concept tokens of the representative embeddings are learned and saved to `ckpts/imagenet/`. In the second training stage, the weights of the learned concept tokens are loaded from `ckpts/imagenet/tokens`, then the weights of the UNet are finetuned and saved to `ckpts/imagenet/`. Other configurations can be seen in the config files (i.e. `configs/imagenet.yml` and `configs/imagenet_stage2.yml`) and can be modified by `--opt` with a parameter dict.
 
 Here is a training example of GenPromp on CUB_200_2011.
 ```
 accelerate config
-accelerate launch python main.py --function train_token --config configs/cub.yml --opt "{'train':{'save_path':'ckpts/cub/'}}"
-accelerate launch python main.py --function train_unet --config configs/cub_stage2.yml --opt "{'train':{'load_token_path':'ckpts/cub/tokens/','save_path':'ckpts/cub/'}}"
+accelerate launch python main.py --function train_token --config configs/cub.yml --opt "{'train': {'save_path': 'ckpts/cub/'}}"
+accelerate launch python main.py --function train_unet --config configs/cub_stage2.yml --opt "{'train': {'load_token_path': 'ckpts/cub/tokens/', 'save_path': 'ckpts/cub/'}}"
 ```
 
 ### 3.4 Inference
 Here is a inference example of GenPromp on ImageNet.
 
 ```
-python main.py --function test --config configs/imagenet_stage2.yml --opt "{'test':{'load_token_path':'ckpts/imagenet750/tokens/','load_unet_path':'ckpts/imagenet750/unet/','save_log_path':'ckpts/imagnet750/log.txt'}}"
+python main.py --function test --config configs/imagenet_stage2.yml --opt "{'test': {'load_token_path': 'ckpts/imagenet750/tokens/', 'load_unet_path': 'ckpts/imagenet750/unet/', 'save_log_path': 'ckpts/imagnet750/log.txt'}}"
 ```
 In the inference stage, the weights of the learned concept tokens are load from `ckpts/imagenet750/tokens/` ,the weights of the finetuned unet are load from `ckpts/imagenet750/unet/` and the log file is saved to `ckpts/imagnet750/log.txt`. Due the random noise added to the tested image and the batch size, the results might fluctuate within a small range ($\pm$ 0.1).
 
 Here is a inference example of GenPromp on CUB_200_2011.
 ```
-python main.py --function test --config configs/cub.yml --opt "{'test':{'load_token_path':'ckpts/cub980/tokens/','save_log_path':'ckpts/cub980/log.txt'}}"
+python main.py --function test --config configs/cub.yml --opt "{'test': {'load_token_path': 'ckpts/cub980/tokens/', 'save_log_path': 'ckpts/cub980/log.txt'}}"
 ```
 
 ### 3.5 Extra Options
@@ -144,8 +144,11 @@ There are many extra options during training and inference. The default option i
   | {'test': {'save_log_path': 'ckpt/log.txt'}}                 | test              | the log file is saved to `ckpt/log.txt`.                            |
   | {'test': {'eval_mode': 'top1'}}                             | test              | `top1` denotes evaluating the predicted top1 cls category of the test image, `top5` denotes evaluating the predicted top5 cls category of the test image, `gtk` denotes evaluating the gt category of the test image, which can be tested without the classification result. We use `top1` as the default eval mode.  |   
 
-  For example, if we want to evaluate GenPromp with 
+These options can be combined by simplely merging the dicts. For example, if you want to evaluate GenPromp with config file `configs/imagenet_stage2.yml`, with categories `[0, 1, 2, ..., 9]`, concept tokens load from `ckpts/imagenet750/tokens/`, unet load from `ckpts/imagenet750/unet/`, log file saved to `ckpts/imagnet750/log0-9.txt`, combine ratio equals to `0`, visualization results saved to `ckpts/imagenet750/vis`, using the following command:
 
+```
+python main.py --function test --config configs/imagenet_stage2.yml --opt "{'data': {'keep_class': [0, 9]}, 'test': {'load_token_path': 'ckpts/imagenet750/tokens/', 'load_unet_path': 'ckpts/imagenet750/unet/', 'save_log_path':'ckpts/imagnet750/log.txt', 'combine_ratio': 0, 'save_vis_path': 'ckpts/imagenet750/vis'}}"
+```
     
 ## 4. License
 

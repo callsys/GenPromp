@@ -122,13 +122,17 @@ There are many extra options during training and inference. The default option i
 
   | Option | Scope | Usage |
   | -------| ----- | ----- |
-  | {'data': {'keep_class': [0, 9]}}      | train & test      | keep the data with category id in `[0, 1, 2, 3, ..., 9]`        |
-  | {'train': {'batch_size': 2}}          | train             | train with batch size `2`.                                      |
-  | {'train': {'save_steps': 200}}        | train_unet        | save trained unet every `200` steps.                            |
-  | {'train': {'num_train_epochs': 1}}    | train             | train the model for `1` epoch.                                  |
-  | {'train': {'max_train_steps': 600}}   | train_unet        | terminate training within `600` steps.                          |
-
-  
+  | {'data': {'keep_class': [0, 9]}}                            | train & test      | keep the data with category id in `[0, 1, 2, 3, ..., 9]`            |
+  | {'train': {'batch_size': 2}}                                | train             | train with batch size `2`.                                          |
+  | {'train': {'save_steps': 200}}                              | train_unet        | save trained unet every `200` steps.                                |
+  | {'train': {'num_train_epochs': 1}}                          | train             | train the model for `1` epoch.                                      |
+  | {'train': {'max_train_steps': 600}}                         | train_unet        | terminate training within `600` steps.                              |
+  | {'train': {'gradient_accumulation_steps': 2}}               | train             | batch size `x2` when the memory of GPU is not large enough.         |
+  | {'train': {'learning_rate': 5.0e-08}}                       | train             | the learning rate is `5.0e-8`.                                      |
+  | {'train': {'scale_lr': True}}                               | train             | the learning rate is multiplied with batch size if `True`.          |
+  | {'train': {'load_pretrain_path': 'stable-diffusion-v1-4'}}  | train             | the pretrained model is load from `stable-diffusion-v1-4`.          |
+  | {'train': {'load_token_path': 'ckpts/imagenet/tokens'}}     | train             | the trained concept tokens are load from `ckpts/imagenet/tokens`.   |
+  | {'train': {'save_path': 'ckpts/imagenet/tokens'}}           | train             | save the trained weights to `ckpts/imagenet/tokens`.                |
 
 ## 4. License
 

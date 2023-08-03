@@ -25,7 +25,7 @@
   - [3. Results](#3-results)
   - [4. Get Start](#4-get-start)
     - [4.1 Installation](#41-installation)
-    - [4.2 Dataset & Files Preparation](#42-dataset-\&-files-preparation)
+    - [4.2 Dataset & Files Preparation](#42-files-preparation)
     - [4.3 Training](#43-training)
     - [4.4 Inference](#44-inference)
     - [4.5 Extra Options](#45-extra-options)

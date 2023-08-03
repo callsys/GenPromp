@@ -53,7 +53,7 @@ pip install matplotlib opencv-python OmegaConf tqdm
   | ckpts/pretrains (5.2GB)                | [Official Link](), [Google Drive](), [Baidu Drive]()          | Stable Diffusion pretrain weights                                     |
   | ckpts/classifications (1.2GB)          | [Google Drive](), [Baidu Drive]()                                      | Classfication results on benchmark datasets                           |
   | ckpts/imagenet750 (3.3.GB)             | [Google Drive](), [Baidu Drive]()                                      | Weights that achieves 75.0% GT-Known Loc on ImageNet                  |
-  | ckpts/cub980 (832KB)                   | [Google Drive](), [Baidu Drive]()                                      | 98.0% GT-Known Loc on CUB                       |
+  | ckpts/cub980 (832KB)                   | [Google Drive](), [Baidu Drive]()                                      | Weights that achieves 98.0% GT-Known Loc on CUB                       |
 
 ```text
     |--GenPromp/

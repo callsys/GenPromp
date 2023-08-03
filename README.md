@@ -142,7 +142,7 @@ There are many extra options during training and inference. The default option i
   | {'test': {'load_unet_path': 'ckpt/unet/'}}                  | test              | the trained unet is load from `ckpt/unet/`.                         |
   | {'test': {'save_vis_path': 'ckpt/vis/'}}                    | test              | the visualized predictions are saved to `ckpt/vis/`.                |
   | {'test': {'save_log_path': 'ckpt/log.txt'}}                 | test              | the log file is saved to `ckpt/log.txt`.                            |
-  | {'test': {'eval_mode': 'top1'}}                             | test              | test mode, `top1` denotes evaluating the predicted top1 cls category of the test image, `top5` denotes evaluating the predicted top5 cls category of the test image, `gtk` denotes evaluating the gt category of the test image, which can be tested without the classification result. We use `top1` as the default eval mode.  |   
+  | {'test': {'eval_mode': 'top1'}}                             | test              | `top1` denotes evaluating the predicted top1 cls category of the test image, `top5` denotes evaluating the predicted top5 cls category of the test image, `gtk` denotes evaluating the gt category of the test image, which can be tested without the classification result. We use `top1` as the default eval mode.  |   
 
   For example, if we want to evaluate GenPromp with 
 

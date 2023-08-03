@@ -1,6 +1,6 @@
 <div align=center>
   
-# Generative Prompt Model for Weakly Supervised Object Localization [ICCV'23]
+# Generative Prompt Model for Weakly Supervised Object Localization
 </div>
 
   

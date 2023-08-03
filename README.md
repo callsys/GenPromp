@@ -88,7 +88,7 @@ To train GenPromp with pre-training weights and infer GenPromp with the given we
 
 ### 3.3 Training
 
-We use `accelerate` for multi-GPU training. Here is a training example of GenPromp on ImageNet. In the first training stage, we learn to get the weights of concept tokens of the representative embeddings and save them to `ckpts/imagenet/`. In the second training stage, we load the weights of the learned concept tokens from `ckpts/imagenet/tokens`, then finetune the weights of the UNet, and save it to `ckpts/imagenet/`. Other configurations can be seen in the config files (i.e. `configs/imagenet.yml` and `configs/imagenet_stage2.yml`) and can be modified by `--opt` with a parameter dict.
+We use `accelerate` for multi-GPU training. Here is a training example of GenPromp on ImageNet. In the first training stage, the weights of concept tokens of the representative embeddings are learned and saved to `ckpts/imagenet/`. In the second training stage, the weights of the learned concept tokens are loaded from `ckpts/imagenet/tokens`, then the weights of the UNet are finetuned and saved to `ckpts/imagenet/`. Other configurations can be seen in the config files (i.e. `configs/imagenet.yml` and `configs/imagenet_stage2.yml`) and can be modified by `--opt` with a parameter dict.
 
 ```
 accelerate config

@@ -3,7 +3,6 @@ import torch
 import numpy as np
 import torch.utils.checkpoint
 import matplotlib.pyplot as plt
-import einops
 
 class AttentionStore():
     def __init__(self, batch_size=2):

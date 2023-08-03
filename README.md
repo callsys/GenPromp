@@ -122,7 +122,7 @@ There are many extra options during training and inference. The default option i
 
   | Option | Scope | Usage |
   | -------| ----- | ----- |
-  | {'data':{'keep_class':[0,9]}}  | train & inference | train or infer the dataset with category id [0,1,2,3,...,9]              |
+  | {'data':{'keep_class':[0,9]}}  | train & inference | keep the data with category id in [0,1,2,3,...,9]          |
   | data/CUB_200_2011 (1.2GB)                   | [Official Link](http://www.vision.caltech.edu/datasets/cub_200_2011/)      | Benchmark dataset                                        |
   | ckpts/pretrains (5.2GB)                | [Official Link](), [Google Drive](), [Baidu Drive]()          | Stable Diffusion pretrain weights                                     |
   | ckpts/classifications (1.2GB)          | [Google Drive](), [Baidu Drive]()                                      | Classfication results on benchmark datasets                           |

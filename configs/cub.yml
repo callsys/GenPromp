@@ -1,0 +1,41 @@
+data:
+    dataset: "cub"
+    root: "data/CUB_200_2011/"
+    keep_class: None
+    num_workers: 4
+    resize_size: 512
+    crop_size: 512
+
+train:
+    batch_size: 2 #8
+    save_steps: None
+    num_train_epochs: 2
+    max_train_steps: None
+    gradient_accumulation_steps: 2
+    learning_rate: 5.0e-05
+    scale_lr: True
+    scale_learning_rate: None
+    lr_scheduler: "constant"
+    lr_warmup_steps: 0
+    adam_beta1: 0.9
+    adam_beta2: 0.999
+    adam_weight_decay: 1e-2
+    adam_epsilon: 1e-08
+    load_pretrain_path: "ckpts/pretrains/stable-diffusion-v1-4"
+    load_token_path: None
+    save_path: "ckpts/cub"
+
+test:
+    batch_size: 2
+    eval_mode: "top1" #["gtk", "top1", "top5"]
+    cam_thr: 0.23
+    combine_ratio: 0.6
+    load_class_path: "ckpts/classification/cub_efficientnetb7.json"
+    load_pretrain_path: "ckpts/pretrains/stable-diffusion-v1-4"
+    load_token_path: "ckpts/cub/tokens/"
+    load_unet_path: None
+    save_vis_path: None
+    save_log_path: "ckpts/cub/log.txt"
+
+
+

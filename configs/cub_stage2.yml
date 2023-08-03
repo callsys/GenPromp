@@ -8,12 +8,12 @@ data:
 
 train:
     batch_size: 2 #8
-    save_steps: 200
-    num_train_epochs: 1
+    save_steps: 100
+    num_train_epochs: 100
     max_train_steps: 600
     gradient_accumulation_steps: 32
     learning_rate: 5.0e-08
-    scale_lr: False
+    scale_lr: True
     scale_learning_rate: None
     lr_scheduler: "constant"
     lr_warmup_steps: 0
@@ -30,7 +30,7 @@ test:
     eval_mode: "top1" #["gtk", "top1", "top5"]
     cam_thr: 0.23
     combine_ratio: 0.6
-    load_class_path: "ckpts/classification/imagenet_efficientnet-b7_3rdparty_8xb32-aa-advprop_in1k.json"
+    load_class_path: "ckpts/classification/cub_efficientnetb7.json"
     load_pretrain_path: "ckpts/pretrains/stable-diffusion-v1-4"
     load_token_path: "ckpts/cub/tokens/"
     load_unet_path: "ckpts/cub/unet/"

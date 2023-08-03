@@ -1,7 +1,5 @@
 <div align=center>
-
 # Generative Prompt Model for Weakly Supervised Object Localization [ICCV'23]
-
 </div>
 
 <div align=center>
@@ -9,12 +7,12 @@
 </div>
 
 <div align=center>
-
 [![arXiv preprint](http://img.shields.io/badge/arXiv-2307.09756-b31b1b)](https://arxiv.org/abs/2307.09756)
-
 </div>
 
+<div align=center>
 <img src="assets/intro.png" width="69%">
+<div align=center>
 
 ## 1. Introduction
 

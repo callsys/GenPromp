@@ -122,7 +122,7 @@ There are many extra options during training and inference. The default option i
 
   | Option | Scope | Usage |
   | -------| ----- | ----- |
-  | {'data': {'keep_class': [0, 9]}}                            | train & test      | keep the data with category id in `[0, 1, 2, 3, ..., 9]`            |
+  | {'data': {'keep_class': [0, 9]}}                            | data              | keep the data with category id in `[0, 1, 2, 3, ..., 9]`            |
   | {'train': {'batch_size': 2}}                                | train             | train with batch size `2`.                                          |
   | {'train': {'num_train_epochs': 1}}                          | train             | train the model for `1` epoch.                                      |
   | {'train': {'save_steps': 200}}                              | train_unet        | save trained unet every `200` steps.                                |

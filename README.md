@@ -5,7 +5,9 @@
 
 <div align=center>
   
-  <p >GenPromp is a Weakly Supervised Object Localization (WSOL) method based on generative models.</p>
+  <p >This is the official implementaion of paper [***Generative Prompt Model for Weakly Supervised Object Localization***](https://arxiv.org/abs/2307.09756), which is accepted as ***ICCV 2023***.
+
+This repository contains Pytorch training code, evaluation code, pre-trained models, and visualization method.</p>
 </div>
 
 <div align=center>

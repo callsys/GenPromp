@@ -109,7 +109,7 @@ Here is a inference example of GenPromp on ImageNet.
 ```
 python main.py --function test --config configs/imagenet_stage2.yml --opt "{'test':{'load_token_path':'ckpts/imagenet750/tokens/','load_unet_path':'ckpts/imagenet750/unet/','save_log_path':'ckpts/imagnet750/log.txt'}}"
 ```
-In the inference stage, the weights of the learned concept tokens are load from `ckpts/imagenet750/tokens/` ,the weights of the finetuned unet are load from `ckpts/imagenet750/unet/` and the log file is saved to `ckpts/imagnet750/log.txt`. Due the random noise added to the tested image and the tested batch size, the results might fluctuate within a small range (\pm 0.1).
+In the inference stage, the weights of the learned concept tokens are load from `ckpts/imagenet750/tokens/` ,the weights of the finetuned unet are load from `ckpts/imagenet750/unet/` and the log file is saved to `ckpts/imagnet750/log.txt`. Due the random noise added to the tested image and the tested batch size, the results might fluctuate within a small range ($$\pm$$ 0.1).
 
 Here is a inference example of GenPromp on CUB_200_2011.
 ```

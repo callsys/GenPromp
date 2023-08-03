@@ -118,6 +118,8 @@ python main.py --function test --config configs/cub.yml --opt "{'test':{'load_to
 
 ### 3.5 Extra Options
 
+There are many extra options during training and inference. The default option is configured in the `yml` file. We can use `--opt` to add or override the default option with a parameter dict. Here are some usage of the most commonly used options.
+
 ## 4. License
 
 - The repository is released under the MIT license.

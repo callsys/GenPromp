@@ -92,13 +92,17 @@ accelerate launch python main.py --function train_token --config configs/imagene
 ```
 
 ```
-accelerate launch python main.py --function train_unet --config configs/imagenet_stage2.yml --opt "{'train':{'load_token_path':'ckpts/imagenet/tokens','save_path':'ckpts/imagenet'}}"
+accelerate launch python main.py --function train_unet --config configs/imagenet_stage2.yml --opt "{'train':{'load_token_path':'ckpts/imagenet/tokens/','save_path':'ckpts/imagenet/'}}"
 ```
 
 ### 3.4 Inference
 
 ```
-accelerate launch python main.py --function test --config configs/imagenet_stage2.yml --opt "{'test':{'load_token_path':'ckpts/imagenet/tokens','load_unet_path':'ckpts/imagenet/unet','save_log_path':'ckpts/imagnet/log.txt'}}"
+accelerate launch python main.py --function test --config configs/imagenet_stage2.yml --opt "{'test':{'load_token_path':'ckpts/imagenet750/tokens/','load_unet_path':'ckpts/imagenet750/unet/','save_log_path':'ckpts/imagnet750/log.txt'}}"
+```
+
+```
+accelerate launch python main.py --function test --config configs/cub.yml --opt "{'test':{'load_token_path':'ckpts/cub980/tokens/','save_log_path':'ckpts/cub980/log.txt'}}"
 ```
 
 ### 3.5 Extra Options

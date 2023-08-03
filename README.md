@@ -25,7 +25,7 @@
   - [3. Results](#3-results)
   - [4. Get Start](#4-get-start)
     - [4.1 Installation](#41-installation)
-    - [4.2 Dataset & Files Preparation](#42-files-preparation)
+    - [4.2 Dataset and Files Preparation](#42-dataset-and-files-preparation)
     - [4.3 Training](#43-training)
     - [4.4 Inference](#44-inference)
     - [4.5 Extra Options](#45-extra-options)
@@ -60,7 +60,7 @@ pip install transformers==4.29.2 accelerate==0.19.0
 pip install matplotlib opencv-python OmegaConf tqdm
  ```
 
-### 4.2 Dataset & Files Preparation
+### 4.2 Dataset and Files Preparation
 To train GenPromp with pre-training weights and infer GenPromp with the given weights, download the files in the table and arrange the files according to the file tree below. (Uploading)
 
 

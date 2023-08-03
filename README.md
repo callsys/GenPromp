@@ -32,7 +32,20 @@
 
 ## 4. License
 
+- The repository is released under the [MIT license](LICENSE).
+
 ## 5. Acknowledgment
+
+- Part of the code is borrowed from [diffusers](https://github.com/huggingface/diffusers),[TS-CAM](https://github.com/vasgaowei/TS-CAM), and [prompt-to-prompt](https://github.com/google/prompt-to-prompt/), we sincerely thank them for their contributions to the community.
 
 ## 6. Citation
 
+```text
+@article{zhao2023generative,
+  title={Generative Prompt Model for Weakly Supervised Object Localization},
+  author={Zhao, Yuzhong and Ye, Qixiang and Wu, Weijia and Shen, Chunhua and Wan, Fang},
+  journal={arXiv preprint arXiv:2307.09756},
+  year={2023}
+}
+
+```

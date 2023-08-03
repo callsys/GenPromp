@@ -1,18 +1,22 @@
 <div align=center>
+  
 # Generative Prompt Model for Weakly Supervised Object Localization [ICCV'23]
 </div>
 
 <div align=center>
+  
   <p >GenPromp is a Weakly Supervised Object Localization (WSOL) method based on generative models.</p>
 </div>
 
 <div align=center>
+  
 [![arXiv preprint](http://img.shields.io/badge/arXiv-2307.09756-b31b1b)](https://arxiv.org/abs/2307.09756)
 </div>
 
 <div align=center>
+  
 <img src="assets/intro.png" width="69%">
-<div align=center>
+</div>
 
 ## 1. Introduction
 
@@ -21,7 +25,10 @@ Weakly supervised object localization (WSOL) remains challenging when learning o
 
 ## 2. Results
 
+<div align=center>
+  
 <img src="assets/results.png" width="99%">
+</div>
 
 ## 3. Get Start
 

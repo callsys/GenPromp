@@ -32,7 +32,7 @@ pip install transformers==4.29.2 accelerate==0.19.0
 pip install matplotlib opencv-python OmegaConf tqdm
  ```
 
-### 3.2 Dataset Preparation
+### 3.2 Dataset & Files Preparation
 
 ### 3.3 Training
 

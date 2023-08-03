@@ -32,7 +32,7 @@
   - [5. License](#5-maerec)
   - [6. Contacts](#6-license)
   - [7. Acknowledgment](#7-acknowledgement)
-  - [8. Citation](##8.-citation)
+  - [8. Citation](##8-citation)
 
 ## 2. Introduction
 

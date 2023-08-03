@@ -60,7 +60,8 @@ pip install matplotlib opencv-python OmegaConf tqdm
       |--datasets
       |--models
       |--main.py
-    ```
+```
+
 
 ### 3.3 Training
 

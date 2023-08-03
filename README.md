@@ -120,9 +120,9 @@ python main.py --function test --config configs/cub.yml --opt "{'test':{'load_to
 
 There are many extra options during training and inference. The default option is configured in the `yml` file. We can use `--opt` to add or override the default option with a parameter dict. Here are some usage of the most commonly used options.
 
-| Option | Scope | Usage |
-  | -------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
-  | data/ImageNet_ILSVRC2012 (146GB)            | [Official Link](http://image-net.org/)                        | Benchmark dataset                                                     |
+  | Option | Scope | Usage |
+  | -------| ----- | ----- |
+  | {'data':{'keep_class':[0,9]}}  | train & inference | train or infer the dataset with category id [0,1,2,3,...,9]              |
   | data/CUB_200_2011 (1.2GB)                   | [Official Link](http://www.vision.caltech.edu/datasets/cub_200_2011/)      | Benchmark dataset                                        |
   | ckpts/pretrains (5.2GB)                | [Official Link](), [Google Drive](), [Baidu Drive]()          | Stable Diffusion pretrain weights                                     |
   | ckpts/classifications (1.2GB)          | [Google Drive](), [Baidu Drive]()                                      | Classfication results on benchmark datasets                           |

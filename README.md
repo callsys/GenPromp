@@ -52,8 +52,8 @@ pip install matplotlib opencv-python OmegaConf tqdm
   | CUB_200_2011 (1.2GB)                   | [Official Download Link](http://www.vision.caltech.edu/datasets/cub_200_2011/)      | Benchmark dataset                                        |
   | ckpts/pretrains (5.2GB)                | [Official Download Link](), [Google Drive](), [Baidu Drive]()          | Stable Diffusion pretrain weights                                     |
   | ckpts/classifications (1.2GB)          | [Google Drive](), [Baidu Drive]()                                      | Classfication results on benchmark datasets                           |
-  | ckpts/ckpt_imagenet (3.3.GB)           | [Google Drive](), [Baidu Drive]()                                      | GenPromp weights on ImageNet                                          |
-  | ckpts/ckpt_cub (832KB)                 | [Google Drive](), [Baidu Drive]()                                      | GenPromp weights on CUB                                               |
+  | ckpts/imagenet750 (3.3.GB)             | [Google Drive](), [Baidu Drive]()                                      | GenPromp weights on ImageNet                                          |
+  | ckpts/cub980 (832KB)                   | [Google Drive](), [Baidu Drive]()                                      | GenPromp weights on CUB                                               |
 
 ```text
     |--GenPromp/

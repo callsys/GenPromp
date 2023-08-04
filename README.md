@@ -48,6 +48,12 @@ Weakly supervised object localization (WSOL) remains challenging when learning o
 
 Now we are working on re-train GenPromp with a better learning schedule.
 
+| Method | Dataset | Cls Back. | Top-1 Loc | Top-5 Loc | GT-known Loc |
+| ------ | ------- | --------- | --------- | --------- | ------------ | 
+| GenPromp            | CUB-200-2011 | EfficientNet-B7 | 87.0 | 96.1 | 98.0 |
+| GenPromp (Re-train) | CUB-200-2011 | EfficientNet-B7 | 87.2 (+0.2) | 96.3 (+0.2) | 98.3 (+0.3) |
+| GenPromp            | ImageNet     | EfficientNet-B7 | 65.2 | 73.4 | 75.0 |
+
 ## 4. Get Start
 
 ### 4.1 Installation

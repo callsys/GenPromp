@@ -46,6 +46,8 @@ Weakly supervised object localization (WSOL) remains challenging when learning o
 <img src="assets/results.png" width="99%">
 </div>
 
+Now we are working on re-train GenPromp with a better learning schedule.
+
 ## 4. Get Start
 
 ### 4.1 Installation

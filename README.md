@@ -187,11 +187,9 @@ python main.py --function test --config configs/imagenet_stage2.yml --opt "{'dat
 </div>
     
 ## 5. Contacts
-If you have any question about our work or this repository, please don't hesitate to contact us by emails.
+If you have any question about our work or this repository, please don't hesitate to contact us by emails or open an issue under this project.
 - [zhaoyuzhong20@mails.ucas.ac.cn](zhaoyuzhong20@mails.ucas.ac.cn)
 - [wanfang@ucas.ac.cn](wanfang@ucas.ac.cn)
-
-You can also open an issue under this project.
 
 ## 6. Acknowledgment
 

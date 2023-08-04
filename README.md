@@ -46,7 +46,7 @@ Weakly supervised object localization (WSOL) remains challenging when learning o
 <img src="assets/results.png" width="99%">
 </div>
 
-We re-train GenPromp with a better learning schedule on A100x4. The performance of GenPromp on CUB-200-2011 is further improved.
+We re-train GenPromp with a better learning schedule on 4 x A100. The performance of GenPromp on CUB-200-2011 is further improved.
 
 | Method | Dataset | Cls Back. | Top-1 Loc | Top-5 Loc | GT-known Loc |
 | ------ | ------- | --------- | --------- | --------- | ------------ | 

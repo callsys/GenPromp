@@ -71,7 +71,7 @@ To train GenPromp with pre-training weights and infer GenPromp with the given we
   | ckpts/pretrains (5.2GB)                | [Official Link](https://huggingface.co/CompVis/stable-diffusion-v1-4), [Google Drive](), [Baidu Drive](https://pan.baidu.com/s/1DC8QUjocIJcmASsA-A1TYA)(o9ei)            | Stable Diffusion pretrain weights                                     |
   | ckpts/classifications (2.3GB)          | [Google Drive](), [Baidu Drive](https://pan.baidu.com/s/1DC8QUjocIJcmASsA-A1TYA)(o9ei)                                        | Classfication results on benchmark datasets                           |
   | ckpts/imagenet750 (3.3.GB)             | [Google Drive](), [Baidu Drive](https://pan.baidu.com/s/1DC8QUjocIJcmASsA-A1TYA)(o9ei)                                   | Weights that achieves 75.0% GT-Known Loc on ImageNet                  |
-  | ckpts/cub980 (832KB)                   | [Google Drive](), [Baidu Drive](https://pan.baidu.com/s/1DC8QUjocIJcmASsA-A1TYA)(o9ei)                                     | Weights that achieves 98.0% GT-Known Loc on CUB                       |
+  | ckpts/cub983 (3.3GB)                   | [Google Drive](), [Baidu Drive](https://pan.baidu.com/s/1DC8QUjocIJcmASsA-A1TYA)(o9ei)                                     | Weights that achieves 98.3% GT-Known Loc on CUB                       |
 
 ```text
     |--GenPromp/
@@ -93,8 +93,9 @@ To train GenPromp with pre-training weights and infer GenPromp with the given we
         |--imagenet750/
           |--tokens/
           |--unet/
-        |--cub980/
+        |--cub983/
           |--tokens/
+          |--unet/
       |--configs/
       |--datasets
       |--models
@@ -129,7 +130,7 @@ In the inference stage, the weights of the learned concept tokens are load from 
 
 Here is a inference example of GenPromp on CUB_200_2011.
 ```
-python main.py --function test --config configs/cub.yml --opt "{'test': {'load_token_path': 'ckpts/cub980/tokens/', 'save_log_path': 'ckpts/cub980/log.txt'}}"
+python main.py --function test --config configs/cub_stage2.yml --opt "{'test': {'load_token_path': 'ckpts/cub983/tokens/', 'load_unet_path': 'ckpts/cub983/unet/', 'save_log_path': 'ckpts/cub983/log.txt'}}"
 ```
 
 ### 4.5 Extra Options

@@ -100,9 +100,15 @@ To train GenPromp with pre-training weights and infer GenPromp with the given we
           |--imagenet_efficientnet-b7_3rdparty_8xb32-aa-advprop_in1k.json
         |--imagenet750/
           |--tokens/
+             |--49408.bin
+             |--49409.bin
+             ...
           |--unet/
         |--cub983/
           |--tokens/
+             |--49408.bin
+             |--49409.bin
+             ...
           |--unet/
       |--configs/
       |--datasets

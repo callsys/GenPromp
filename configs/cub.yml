@@ -7,11 +7,11 @@ data:
     crop_size: 512
 
 train:
-    batch_size: 2 #8
+    batch_size: 4 #8
     save_steps: None
     num_train_epochs: 2
     max_train_steps: None
-    gradient_accumulation_steps: 2
+    gradient_accumulation_steps: 1
     learning_rate: 5.0e-05
     scale_lr: True
     scale_learning_rate: None

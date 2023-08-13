@@ -9,11 +9,11 @@ This is the official implementaion of paper [***Generative Prompt Model for Weak
 <div align=center>
   
 [![arXiv preprint](http://img.shields.io/badge/arXiv-2307.09756-b31b1b)](https://arxiv.org/abs/2307.09756)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/generative-prompt-model-for-weakly-supervised/weakly-supervised-object-localization-on-2)](https://paperswithcode.com/sota/weakly-supervised-object-localization-on-2?p=generative-prompt-model-for-weakly-supervised)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/generative-prompt-model-for-weakly-supervised/weakly-supervised-object-localization-on-cub)](https://paperswithcode.com/sota/weakly-supervised-object-localization-on-cub?p=generative-prompt-model-for-weakly-supervised)
 ![Python 3.8](https://img.shields.io/badge/Python-3.8-green.svg?style=plastic)
 ![PyTorch 1.11](https://img.shields.io/badge/PyTorch-1.11-EE4C2C.svg?style=plastic)
 [![LICENSE](https://img.shields.io/github/license/vasgaowei/ts-cam.svg)](LICENSE)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/generative-prompt-model-for-weakly-supervised/weakly-supervised-object-localization-on-2)](https://paperswithcode.com/sota/weakly-supervised-object-localization-on-2?p=generative-prompt-model-for-weakly-supervised)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/generative-prompt-model-for-weakly-supervised/weakly-supervised-object-localization-on-cub)](https://paperswithcode.com/sota/weakly-supervised-object-localization-on-cub?p=generative-prompt-model-for-weakly-supervised)
 </div>
 
 <div align=center>

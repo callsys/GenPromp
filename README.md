@@ -193,7 +193,7 @@ If you have any question about our work or this repository, please don't hesitat
 
 ## 6. Acknowledgment
 
-- Part of the code is borrowed from [TS-CAM](https://github.com/vasgaowei/TS-CAM), [diffusers](https://github.com/huggingface/diffusers), and [prompt-to-prompt](https://github.com/google/prompt-to-prompt/), we sincerely thank them for their contributions to the community. Thank [MzeroMiko]() for code re-implementation.
+- Part of the code is borrowed from [TS-CAM](https://github.com/vasgaowei/TS-CAM), [diffusers](https://github.com/huggingface/diffusers), and [prompt-to-prompt](https://github.com/google/prompt-to-prompt/), we sincerely thank them for their contributions to the community. Thank [MzeroMiko](https://github.com/MzeroMiko) for better code implementation.
 
 
 ## 7. Citation

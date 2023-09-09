@@ -196,7 +196,7 @@ class BaseDataset(Dataset):
 
     def init_text_encoder(self, text_encoder):
         text_encoder.resize_token_embeddings(len(self.tokenizer))
-        if self.test_mode and self.load_token_path is not None:
+        if self.test_mode or (self.load_token_path is not None):
             text_encoder = self.load_embeddings(text_encoder)
         elif not self.test_mode:
             text_encoder = self.init_embeddings(text_encoder)

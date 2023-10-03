@@ -4,7 +4,7 @@
 </div>
 
   
-This is the official implementaion of paper [***Generative Prompt Model for Weakly Supervised Object Localization***](https://arxiv.org/abs/2307.09756), which is accepted in ***ICCV 2023***. This repository contains Pytorch training code, evaluation code, pre-trained models, and visualization method.
+This is the official implementaion of paper [***Generative Prompt Model for Weakly Supervised Object Localization***](https://openaccess.thecvf.com/content/ICCV2023/html/Zhao_Generative_Prompt_Model_for_Weakly_Supervised_Object_Localization_ICCV_2023_paper.html), which is accepted in ***ICCV 2023***. This repository contains Pytorch training code, evaluation code, pre-trained models, and visualization method.
 
 <div align=center>
   

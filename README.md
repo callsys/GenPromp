@@ -208,7 +208,9 @@ If you have any question about our work or this repository, please don't hesitat
   journal={arXiv preprint arXiv:2307.09756},
   year={2023}
 }
+```
 
+```text
 @InProceedings{Zhao_2023_ICCV,
     author    = {Zhao, Yuzhong and Ye, Qixiang and Wu, Weijia and Shen, Chunhua and Wan, Fang},
     title     = {Generative Prompt Model for Weakly Supervised Object Localization},
